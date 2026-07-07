@@ -4,8 +4,7 @@ venv/
 .venv/
 .ipynb_checkpoints/
 Documents/
-Data/Preprocessed/
-Data/Raw/
+Data/
 Code/C-
 EEGNet/
 Code/EEGModels
