@@ -3,6 +3,10 @@ __pycache__/
 venv/
 .venv/
 .ipynb_checkpoints/
+<<<<<<< HEAD
+=======
+
+>>>>>>> e8bf08eafc8ebf75a5e2ef8ad5e3030e6ddf2976
 Data/
 Code/C-
 EEGNet/
