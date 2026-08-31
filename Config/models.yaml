@@ -1,0 +1,48 @@
+dataset:
+  subjects: null
+
+experiment:
+  seeds: [42, 123, 456]
+  validation_strategy: next_subject
+
+training:
+  max_epochs: 200
+  patience: 20
+  min_delta: 0.0001
+  batch_size: 64
+  num_workers: 0
+
+models:
+  eegnet:
+    learning_rate: 0.001
+    weight_decay: 0.0
+    dropout: 0.5
+    kernel_length: 32
+    F1: 8
+    D: 2
+    F2: 16
+  shallowconvnet:
+    learning_rate: 0.001
+    weight_decay: 0.0
+    dropout: 0.5
+  atcnet:
+    learning_rate: 0.001
+    weight_decay: 0.00001
+    n_windows: 3
+    attention: mha
+    eegn_F1: 16
+    eegn_D: 2
+    eegn_kernel_size: 64
+    eegn_pool_size: 7
+    eegn_dropout: 0.3
+    tcn_depth: 2
+    tcn_kernel_size: 4
+    tcn_filters: 32
+    tcn_dropout: 0.3
+    tcn_activation: elu
+    fuse: average
+  csp_lda:
+    n_components: 8
+    reg: null
+    log: true
+    norm_trace: false
