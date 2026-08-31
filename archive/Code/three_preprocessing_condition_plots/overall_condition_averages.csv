@@ -1,0 +1,4 @@
+condition,mean_accuracy,mean_auc,mean_fmeasure
+both_train_test,0.4681,0.733875,0.430175
+train_only,0.422175,0.70485,0.37887499999999996
+test_only,0.40220000000000006,0.693975,0.33470000000000005
